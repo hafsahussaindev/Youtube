@@ -1,0 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family:'Oswald';
+    color: black;
+    gap: 2px;
+}
+
+.menu-bars {
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    font-weight: lighter;
+    height: 20px;
+}
+
+.nav-menu {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    list-style: none;
+    transition: 850ms;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.nav-menu-items > ul {
+    list-style: none;
+    
+}
+
+.navbar-toggle {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.nav-text {
+    display: flex;
+    padding: 1rem;
+    gap: 10px;
+}
+
+
+.youtube-logo {
+    font-size: 27px;
+    color: red;
+}
+
+
