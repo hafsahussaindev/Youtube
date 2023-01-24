@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ .mg{
+    /* width: 40px; */
+    /* border: none; */
+} 
+
+.plus-btn , .notification-btn , .sign-btn{
+   border: none;
+}
+.nav-btn{
+  border: none !important;
+}
+.form-control{
+    border-radius: 50px !important;
+    border-top-right-radius: 0px !important ;
+    border-bottom-right-radius: 0px !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.search-btn{
+    background-color: #F0F0F0 !important;
+    color: black !important;
+    border-top-left-radius: 0px !important ;
+    border-bottom-left-radius: 0px !important;
+    height: fit-content !important;
+}
+.yt-image{
+    display: flex;
+    align-items: flex-start;
+}

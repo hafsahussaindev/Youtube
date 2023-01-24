@@ -1,23 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<!-- head-start -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
 </head>
+<!-- head-close -->
+<!-- body-start -->
+
 <body>
-    <header class="header">
-     <a href="#">
-        <img src="YT logo.jpg" width="10%" alt="Youtube-logo" class="youtube-logo">
-     </a>
-     <form class="search-bar">
-        <input class="search-input" type="search"
-        placeholder="Search"
-     </form>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
+        <!-- container-main-start -->
+        <div class="container-fluid">
+            <!-- ham-container-start -->
+            <div class="hamburger">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <img src="ham.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="logo.png" width="25%" alt="Youtube-logo" class="youtube-logo"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ham-container-end -->
+            <!-- search-container-start -->
+            <div class="input-group mb-3 me-auto ms-auto ">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary nav-btn search-btn" type="button">
+                        <ion-icon class="nav-btn" name="search-outline"></ion-icon>
+                    </button>
+                    <button class="btn btn-outline-secondary nav-btn " type="button">
 
+                        <ion-icon class="nav-btn" name="mic-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- search-container-end -->
+            <!-- notification-container-start -->
+            <div class="notification">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
 
-     
-    </header>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="plus-btn " type="submit">
+                                <img src="plus.png " width="25px">
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="notification-btn  " type="submit">
+                                <ion-icon name="notifications-outline" width="30px"></ion-icon>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="sign-btn  " type="submit">
+                                <img src="signin.png" width="25px">
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- notification-container-end -->
+        </div>
+        <!-- container-main-close -->
+    </nav>
+     <!-- <img src="yt image.webp" alt="" srcset> -->
+    <!-- navbar-close -->
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="yt image.webp" class="card-img-top" alt="...">
+                    <div class="card-body yt-image">
+                      <div class="logo-title">
+                       <img src="lg.jpg" width="40px" alt="" srcset="">
+                      </div>
+                      <div class="channel-info"></div>
+                      
+                    </div>
+                    <div class="count-info">
+
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4">
+                Column
+              </div>
+              <div class="col-4">
+                Column
+              </div>
+            </div>
+          </di
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<!-- body close -->
+
 </html>
