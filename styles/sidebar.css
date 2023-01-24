@@ -8,7 +8,6 @@
 
 nav {
     height: 80px;
-    background-color: black;
 }
 /* Aligning logo and text */
 .nav-head {
@@ -41,9 +40,15 @@ nav {
     list-style: none;
     transition: 850ms;
     font-family: "roboto sans-sarif";
+    background-color: white;
+    left: -100%;
 
 }
 
+.active {
+    left: 0;
+    transition: 350ms;
+}
 
 /* removing underlines from links */
 a {
@@ -75,6 +80,7 @@ a {
     padding: 10px;
     font-weight: lighter;
     font-size: 16px;
+    width: 100%;
 }
 
 
@@ -93,6 +99,21 @@ a {
 
 
 .main {
-    position:absolute;
+    
+    margin-left: 100px;
+    margin-top: 20px;
+    transition: 850s;
+}
 
+.side-effect {
+   background: hidden;
+}
+
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+   
 }
