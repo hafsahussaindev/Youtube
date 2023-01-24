@@ -1,83 +1,281 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<!-- head-start -->
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./styles/sidebar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/
-releases/v5.13.1/css/all.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Side Menu -->
-    <nav>
-        <span id="open-menu" onclick="showMenu()">
-            <i class="fas fa-bars open-bars" ></i>
-        </span>
-    </nav>
-    <div class="nav-menu" id="nav-menu">
-        <div class="nav-menu-items">
-            <!-- Toggle button with Youtube Logo  -->
-            <div class="navbar-toggle">
-                <span href="#"  id="#show"  class="toggle-menu" onclick="hideMenu()">
-                    <i class="fas fa-bars menu-bars nav-icon"></i>
-                </span>
-                <a href="#" class="nav-head">
-                    <i class="fab fa-youtube youtube-logo"></i> 
-                    <span class="logo-text"> Youtube </span> 
-                </a>
-            <!-- Toggle button Ends -->
+    <title>Youtube Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+</head>
+<!-- head-close -->
+<!-- body-start -->
+
+<body>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
+        <!-- container-main-start -->
+        <div class="container-fluid">
+            <!-- ham-container-start -->
+            <div class="hamburger">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <img src="ham.png">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="logo.png" width="25%" alt="Youtube-logo" class="youtube-logo"></a>
+                    </li>
+                </ul>
             </div>
+            <!-- ham-container-end -->
+            <!-- search-container-start -->
+            <div class="input-group mb-3 me-auto ms-auto ">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary nav-btn search-btn" type="button">
+                        <ion-icon class="nav-btn" name="search-outline"></ion-icon>
+                    </button>
+                    <button class="btn btn-outline-secondary nav-btn " type="button">
 
-            <!--  Creating lists for each menu section -->
+                        <ion-icon class="nav-btn" name="mic-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- search-container-end -->
+            <!-- notification-container-start -->
+            <div class="notification">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
 
-            <!-- First Section -->
-            <ul class="nav-section">
-                <!-- Icon and Text in one List so we can align them through flex -->
-                <li class="nav-text"><i class="fa fa-home nav-icon"></i>Home</li>
-                <li class="nav-text"><i class="fa fa-fire nav-icon"></i>Trending</li>
-                <li class="nav-text"><i class="fab fa-youtube nav-icon"></i>Subscription</li>
-                <hr>
-            </ul>
-
-            <!-- Seconds Section -->
-            <ul class="nav-section">
-                <li class="nav-text"><i class="fa fa-play-circle nav-icon"></i>Library</li>
-                <li class="nav-text"><i class="fa fa-history nav-icon"></i>History</li>
-                <li class="nav-text"><i class="fas fa-video nav-icon"></i>Your Videos</li>
-                <li class="nav-text"><i class="fas fa-clock nav-icon"></i>Watch Later</li>
-                <li class="nav-text"><i class="fas fa-thumbs-up nav-icon"></i>Liked Videos</li>
-                <li class="nav-text"><i class="fas fa-file-video nav-icon"></i>Playlist</li>
-                <hr>
-            </ul>
-
-            <!-- Third Section -->
-            <ul class="nav-section">
-                <li class="nav-text"><i class="fa fa-cog nav-icon"></i>Settings</li>
-                <li class="nav-text"><i class="fa fa-flag nav-icon"></i>Report</li>
-                <li class="nav-text"><i class="fas fa-phone nav-icon"></i>Send Feedback</li>
- 
-                <hr>
-            </ul>
- 
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="plus-btn " type="submit">
+                                <img src="plus.png " width="25px">
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="notification-btn  " type="submit">
+                                <ion-icon name="notifications-outline" width="30px"></ion-icon>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="sign-btn  " type="submit">
+                                <img src="signin.png" width="25px">
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- notification-container-end -->
         </div>
-    </div>
-    
+        <!-- container-main-close -->
+    </nav>
+     <!-- <img src="yt image.webp" alt="" srcset> -->
+    <!-- navbar-close -->
+      <!-- container-fluid-start -->
+        <div class="container-fluid">
+            <!-- container-row-start -->
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="yt image.webp" class="card-img-top" alt="...">
+                    <div class="card-body yt-image">
+                      <div class="logo-title">
+                         <img src="lg.jpg" class="channel-logo" alt="" srcset="">
+                         <span class="vid-title">
+                          How  to learn graphic designing with Canva in only one course
+                         </span> 
+                      </div>
+                    <div class="channel-info"> 
+                    <a class="channel-name" href="https://www.youtube.com/@90sMentor">90's Mentor</a>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                 </div>
+                    <div class="count-info">
+                    <span class="channel-views">1M Views</span>
+                    •
+                    <span class="channel-views">5 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img 2.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 2.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              I paid them 5$ to create my website on Fiverr
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Code With Harry</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">2M Views</span>
+                        •
+                        <span class="channel-views">1 month ago</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="image 3.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 3.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              How to use Leetcode Effectively to crack your dream company
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Anshika Gupta</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">150k Views</span>
+                        •
+                        <span class="channel-views">6 days ago</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="image 4.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 4.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              How  to Start Freelancing In 2023?
+                              Hindi
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Hindu Tech Tutorials</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">40K Views</span>
+                        •
+                        <span class="channel-views">1 month ago</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="image 9.webp" class="card-img-top" alt="...">
+                    <div class="card-body yt-image">
+                      <div class="logo-title">
+                         <img src="logo 6.jpg" class="channel-logo" alt="" srcset="">
+                         <span class="vid-title">
+                         What is AWS? | Amazon Web Services
+                         </span> 
+                      </div>
+                    <div class="channel-info"> 
+                    <a class="channel-name" href="https://www.youtube.com/@90sMentor">Amazon Web Services</a>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                 </div>
+                    <div class="count-info">
+                    <span class="channel-views">934K Views</span>
+                    •
+                    <span class="channel-views">3 years ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="image 7.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 7.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              Software Engineer Promotions| What are the levels of Software 
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Apna College</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">310K Views</span>
+                        •
+                        <span class="channel-views">7 months ago</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="image 8.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 8.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              What Channel To Create on Youtube By Rehan Allahwala
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Rehan Allahwala</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">270K Views</span>
+                        •
+                        <span class="channel-views">1 year ago</span>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="image 5.webp" class="card-img-top" alt="...">
+                        <div class="card-body yt-image">
+                          <div class="logo-title">
+                             <img src="logo 5.jpg" class="channel-logo" alt="" srcset="">
+                             <span class="vid-title">
+                              I understand English very well, but i am unable to speak English
+                             </span> 
+                          </div>
+                        <div class="channel-info"> 
+                        <a class="channel-name" href="https://www.youtube.com/@90sMentor">Aleena Rais Live</a>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                        <div class="count-info">
+                        <span class="channel-views">594K Views</span>
+                        •
+                        <span class="channel-views">2 weeks ago</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+             <!-- container-row-close -->
+        </div>
+        <!-- container-fluid-close -->
 
-    <div class="main">
-        <h1>This is main</h1>
-    </div>
-    <!-- Menu Ends -->
-    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </body>
+</body>
+<!-- body close -->
+
 </html>
