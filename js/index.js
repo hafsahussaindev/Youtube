@@ -14,3 +14,7 @@ function hideMenu(){
     main.classList.remove("side-effect")
 
 }
+
+function submit(){
+        window.location.href="http://programminghead.com";  
+}
