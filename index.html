@@ -18,33 +18,46 @@ releases/v5.13.1/css/all.css">
   </head>
   <body>
     <!-- Side Menu -->
+    <nav>
+        <h1>Navbar</h1>
+    </nav>
     <div class="nav-menu">
         <div class="nav-menu-items">
+            <!-- Toggle button with Youtube Logo  -->
             <div class="navbar-toggle">
-                <span href="#"  id="#show">
+                <span href="#"  id="#show"  class="toggle-menu">
                     <i class="fas fa-bars menu-bars nav-icon"></i>
                 </span>
                 <a href="#" class="nav-head">
                     <i class="fab fa-youtube youtube-logo"></i> 
                     <span class="logo-text"> Youtube </span> 
                 </a>
-               
+            <!-- Toggle button Ends -->
             </div>
+
+            <!--  Creating lists for each menu section -->
+
+            <!-- First Section -->
             <ul class="nav-section">
+                <!-- Icon and Text in one List so we can align them through flex -->
                 <li class="nav-text"><i class="fa fa-home nav-icon"></i>Home</li>
                 <li class="nav-text"><i class="fa fa-fire nav-icon"></i>Trending</li>
                 <li class="nav-text"><i class="fab fa-youtube nav-icon"></i>Subscription</li>
                 <hr>
             </ul>
+
+            <!-- Seconds Section -->
             <ul class="nav-section">
                 <li class="nav-text"><i class="fa fa-play-circle nav-icon"></i>Library</li>
                 <li class="nav-text"><i class="fa fa-history nav-icon"></i>History</li>
                 <li class="nav-text"><i class="fas fa-video nav-icon"></i>Your Videos</li>
                 <li class="nav-text"><i class="fas fa-clock nav-icon"></i>Watch Later</li>
-                <li class="nav-text"><i class="fas fa-thumbs-up nav-icon"></i>Likes Videos</li>
+                <li class="nav-text"><i class="fas fa-thumbs-up nav-icon"></i>Liked Videos</li>
                 <li class="nav-text"><i class="fas fa-file-video nav-icon"></i>Playlist</li>
                 <hr>
             </ul>
+
+            <!-- Third Section -->
             <ul class="nav-section">
                 <li class="nav-text"><i class="fa fa-hammer nav-icon"></i>Settings</li>
                 <li class="nav-text"><i class="fa fa-flag nav-icon"></i>Report</li>
@@ -55,8 +68,11 @@ releases/v5.13.1/css/all.css">
  
         </div>
     </div>
+    <div class="main">
+        <h1>This is main</h1>
+    </div>
     <!-- Menu Ends -->
-
+        
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

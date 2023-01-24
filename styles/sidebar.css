@@ -1,9 +1,16 @@
+/* Adding Font-Famliy  */
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    height: 80px;
+    background-color: black;
+}
+/* Aligning logo and text */
 .nav-head {
     display: flex;
     justify-content: center;
@@ -14,15 +21,18 @@
     gap: 2px;
 }
 
+
+/* hamburger size */
 .menu-bars {
     font-size: 2rem;
-    margin-left: 1.2rem;
     font-weight: lighter;
     height: 20px;
 }
 
+
+/* making sidebar resposive and fixed so it can float over other elements */
 .nav-menu {
-    width: 250px;
+    width: 200px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,35 +40,59 @@
     top: 0px;
     list-style: none;
     transition: 850ms;
+    font-family: "roboto sans-sarif";
 
 }
 
+
+/* removing underlines from links */
 a {
     text-decoration: none !important;
 }
 
+
+/* Removing bullets from lists */
 .nav-menu-items > ul {
     list-style: none;
     
 }
 
+/* Aligning Hamburger and Nav-head (Logo & Text) */
 .navbar-toggle {
     display: flex;
     justify-content: start;
     gap: 10px;
     margin-bottom: 5px;
+    padding: 5px;
 }
 
+
+/* Aliging nav menu link and icons  */
 .nav-text {
     display: flex;
-    padding: 1rem;
+    padding: 1.2rem 0rem;
     gap: 10px;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 
 
+/* Adding hover effect */
+.nav-text:hover{
+    cursor:pointer;
+    background-color: #E5E5E5;
+    border-radius: 7px;
+}
+
+/* styling logo  */
 .youtube-logo {
     font-size: 27px;
     color: red;
 }
 
 
+.main {
+    position:absolute;
+
+}
